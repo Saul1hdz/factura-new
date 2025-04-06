@@ -78,7 +78,7 @@ const menuitems = [
             id="navbarCollapse"
             class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white dark:bg-dark-2 py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent dark:lg:bg-transparent lg:py-0 xl:px-4 lg:shadow-none 2xl:px-6"
           >
-            <ul class="block lg:flex 2xl:ml-20">
+            <!-- <ul class="block lg:flex 2xl:ml-20">
               {
                 menuitems.map((item, index) => {
                   if(!item.children) {
@@ -132,11 +132,11 @@ const menuitems = [
                   // }
                 })
               }
-            </ul>
+            </ul> -->
           </nav>
         </div>
         <div class="justify-end pr-16 flex items-center lg:pr-0">
-          <button class="inline-flex cursor-pointer items-center" id="themeSwitcher" >
+          <button class="inline-flex cursor-pointer items-center mr-6" id="themeSwitcher" >
             <span class={`hidden dark:block ${Astro.url.pathname === '/' ? 'text-white' : 'text-dark dark:text-white'}`}>
               <svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -176,12 +176,7 @@ const menuitems = [
             </span>
           </button>
           <div class="hidden sm:flex">
-            <a
-              href="/signin"
-              class={`${Astro.url.pathname === '/' ? 'loginBtn py-2 px-[22px] text-base font-medium text-white hover:opacity-70' : 'loginBtn py-2 px-[22px] text-base font-medium text-dark dark:text-white hover:opacity-70'}`}
-            >
-              Sign In
-            </a>
+
             <a
               href="/signup"
               class={`${Astro.url.pathname === '/' ? 'signUpBtn rounded-md bg-white bg-opacity-20 py-2 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark' : 'signUpBtn rounded-md bg-primary py-2 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-blue-dark'}`}
