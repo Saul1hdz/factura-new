@@ -4,12 +4,17 @@ const faqs = [
   {
     title: "Diferencia entre lo físico y la nube con EasyFact",
     description:
-      "Con EasyFact no necesitás instalaciones complicadas ni equipos especiales. Al ser una plataforma en línea, podés acceder desde cualquier lugar con internet, sin preocuparte por servidores, respaldos ni costos ocultos. Tus documentos están seguros, disponibles 24/7, y se almacenan por al menos 10 años según la ley salvadoreña. Además, no hay cobros extras por cada documento, y la migración es rápida y sin dolores de cabeza. Todo lo que necesitás, al instante, sin enredos ni papeleo.",
+      `Con EasyFact no necesitás instalaciones complicadas ni equipos especiales.
+      Al ser una plataforma en línea, podés acceder desde cualquier lugar con internet, sin preocuparte por servidores, respaldos ni costos ocultos.<br/><br>
+      Tus documentos están seguros, disponibles 24/7, y se almacenan por al menos 10 años según la ley salvadoreña.
+      Además, no hay cobros extras por cada documento, y la migración es rápida y sin dolores de cabeza.
+      Todo lo que necesitás, al instante, sin enredos ni papeleo.`,
   },
   {
     title: "¿Qué incluye EasyFact?",
     description:
-      "EasyFact te facilita la emisión y envío de documentos tributarios como facturas, comprobantes y notas de crédito, incluyendo documentos para exportación y sujetos excluidos, todo autorizado por el Ministerio de Hacienda. Disfrutá de envíos ilimitados por correo y WhatsApp, visor de documentos, reportes automáticos, libros y anexos de IVA, firma electrónica y soporte especializado. Todo adaptado a las necesidades de tu empresa.",
+      `EasyFact te facilita la emisión y envío de documentos tributarios como facturas, comprobantes y notas de crédito, incluyendo documentos para exportación y sujetos excluidos, todo autorizado por el Ministerio de Hacienda. <br/><br>
+      Disfrutá de envíos ilimitados por correo y WhatsApp, visor de documentos, reportes automáticos, libros y anexos de IVA, firma electrónica y soporte especializado. Todo adaptado a las necesidades de tu empresa.`,
   },
   {
     title: "¿Hay límite de usuarios?",
@@ -19,8 +24,9 @@ const faqs = [
   {
     title: "¿Qué necesito para instalar EasyFact?",
     description:
-      "EasyFact es una plataforma en línea a la que puedes acceder desde cualquier navegador web, lo que te permite utilizarla desde cualquier dispositivo con conexión a internet. Para la mejor experiencia, recomendamos el uso de una computadora, aunque la plataforma también es accesible en otros equipos.",
-  },
+      `EasyFact es una plataforma en línea a la que puedes acceder desde cualquier navegador web, lo que te permite utilizarla desde cualquier dispositivo con conexión a internet. <br/><br>
+        Para la mejor experiencia, recomendamos el uso de una computadora, aunque la plataforma también es accesible en otros equipos.`,
+    },
   {
     title: "¿Cobran por documento extra emitido?",
     description:
@@ -79,9 +85,7 @@ const faqs = [
                     <h3 class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                       {faq.title}
                     </h3>
-                    <p class="text-base text-body-color dark:text-dark-6">
-                      {faq.description}
-                    </p>
+                    <p class="text-base text-body-color dark:text-dark-6" set:html={faq.description} />
                   </div>
                 </div>
               )
@@ -114,9 +118,7 @@ const faqs = [
                     <h3 class="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                       {faq.title}
                     </h3>
-                    <p class="text-base text-body-color dark:text-dark-6">
-                      {faq.description}
-                    </p>
+                    <p class="text-base text-body-color dark:text-dark-6" set:html={faq.description} />
                   </div>
                 </div>
               )
